@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign UP</title>
+    <!-- BOOTSTRAP -->
+    <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous"> -->
+    
+    <!-- GOOGLEAPI -->
+    <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet' type='text/css'>
+    
+    <!-- FONT AWESOME -->
+    <script src="https://kit.fontawesome.com/07c41cdf40.js" crossorigin="anonymous"></script>
+    
+    <!-- CSS LINKS -->
+    <link rel="stylesheet" href="./templates/newlog.css">
+
+</head>
+<body>
+    <div class="container">
+        <div class="container-items">
+        <div class="headers"><h3>Sign-up</h3>
+            <p>Enter Details Below</p>
+        </div>
+       <form class="details">
+        <div class="field">
+            <input type="text" id="username" name="admin_username" placeholder="username" required>
+        </div>
+        <div class="field">
+            <input type="text" id="password" name="admin_password" placeholder="password" required> 
+        </div>
+            <button type="submit" onclick="event.preventDefault(), admin()" class="btn">submit</button>
+       </form>
+
+       
+
+        <script src="./scripts/admin_signup.js"></script>
+</body>
+</html>

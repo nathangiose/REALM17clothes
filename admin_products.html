@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="description" content="This is the description">
+        <title>Admin Page</title>
+        <!-- BOOTSTRAP -->
+        <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous"> -->
+        
+        <!-- GOOGLEAPI -->
+        <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet' type='text/css'>
+        
+        <!-- FONT AWESOME -->
+        <script src="https://kit.fontawesome.com/07c41cdf40.js" crossorigin="anonymous"></script>
+        
+        <!-- CSS LINKS -->
+        <link rel="stylesheet" href="./templates/store.css" />
+        <link rel="stylesheet" href="./templates/admin.css">
+        
+    </head>
+    <body>
+        <header class="main-header">
+            <nav class="main-nav nav">
+                <ul>
+                    <li><a href="./login.html">HOME</a></li>
+                    <li><button class="product-modal">ADD Product</button></li>
+                    <li><button class="modal-button">Profile</button>
+                    </li>
+                </ul>
+            </nav>
+            <h1 class="band-name band-name-large">REALM17</h1>
+            <div class="modal-bg">
+                <div class="modal">
+                    <h2 class="model-header">Enter information of Product</h2>
+                    <form method="POST" class="form-model" id="form">
+                      <input type="text" id="item_name" name="item_name" placeholder="product name">
+                      <input type="text" id="description" name="description" placeholder="description">
+                      <input type="text" id="quantity" name="quantity" placeholder="quantity">
+                      <input type="text" id="price" name="price" placeholder="price">
+                      <input type="text" id="type" name="type" placeholder="type">
+                      <input type="file" id="picture" name="picture" placeholder="picture" onchange="convert()">
+
+                      
+                    </form>
+                    <span class="modal-close">X</span>
+                    <button type="submit" onclick="event.preventDefault(), create()">Create Product</button>
+                </div>
+            </div>
+        </header>
+        <section class="container content-section">
+            <h2 class="section-header">MERCH</h2>
+            <div class="shop-items">
+            </div>
+        </section>
+        <footer class="foot">
+            <div class="copyright">copyright © 2021, <b>REALM17 </b></div><br>
+            <a class="designer" href="#"> Nathan Giose</a>
+          </div>
+        </footer>
+        <script src="./scripts/admin.js"></script>
+    </body>
+</html>

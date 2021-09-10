@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Store</title>
+        <meta name="description" content="This is the description">
+        <!-- BOOTSTRAP -->
+        <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous"> -->
+        
+        <!-- GOOGLEAPI -->
+        <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet' type='text/css'>
+        
+        <!-- FONT AWESOME -->
+        <script src="https://kit.fontawesome.com/07c41cdf40.js" crossorigin="anonymous"></script>
+        
+        <!-- CSS LINKS -->
+        <link rel="stylesheet" href="./templates/store.css" />
+
+    </head>
+    <body>
+        <header class="main-header">
+            <nav class="main-nav nav">
+                <ul>
+                    <li><a href="./login.html">HOME</a></li>
+                    <li><a href="store.html">STORE</a></li>
+                    <li><button class="modal-button">Profile</button>
+                    </li>
+                </ul>
+            </nav>
+            <h1 class="band-name band-name-large">REALM17</h1>
+            <div class="modal-bg">
+                <div class="modal">
+                    <p class="first-name"></p>
+                    <p class="surname"></p>
+                    <p class="address"></p>
+                    <p class="email"></p>
+                    <p class="username"></p>
+                    <p class="password"></p>
+                    <span class="modal-close">X</span>
+                    <button class="delete" onclick="Deleteuser()">Delete user</button>
+                </div>
+            </div>
+        </header>
+        <section class="container content-section">
+            <h2 class="section-header">REALM17</h2>
+            <div class="shop-items">
+            </div>
+        </section>
+        <section class="container content-section">
+            <h2 class="section-header">CART</h2>
+            <div class="cart-row">
+                <span class="cart-item cart-header cart-column">ITEM</span>
+                <span class="cart-price cart-header cart-column">PRICE</span>
+                <span class="cart-quantity cart-header cart-column">QUANTITY</span>
+            </div>
+            <div class="cart-items">
+            </div>
+            <div class="cart-total">
+                <strong class="cart-total-title">Total</strong>
+                <span class="cart-total-price"></span>
+            </div>
+            <button class="btn btn-primary btn-purchase" type="button">PURCHASE</button>
+        </section>
+        <footer class="foot">
+            <div class="copyright">copyright © 2021, <b>REALM17 </b></div><br>
+            <a class="designer" href="#"> Nathan Giose</a>
+          </div>
+        </footer>
+        <script src="./scripts/store.js"></script>
+    </body>
+</html>

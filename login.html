@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <!-- BOOTSTRAP -->
+    <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous"> -->
+
+    <!-- GOOGLEAPI -->
+    <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet' type='text/css'>
+
+    <!-- FONT AWESOME -->
+    <script src="https://kit.fontawesome.com/07c41cdf40.js" crossorigin="anonymous"></script>
+
+    <!-- CSS LINKS -->
+    <link rel="stylesheet" href="./templates/newlog.css">
+</head>
+<body>
+
+    <div class="container">
+        <div class="title-text">
+            <div class="title Login">Login Page</div>
+            <div class="title Admin">
+                <div class="header">Admin</div>
+            </div>  
+        </div>
+        
+        <div class="Form-container">
+            <div class="slide-controls">
+                <input type="radio" name="slide" id="Login" checked>
+                <input type="radio" name="slide" id="admin" checked>
+                <label for="Login" class="slide">Login</label>
+                <label for="admin" class="slide admin">admin</label>
+                <div class="slide-tab"></div> 
+            </div>
+
+        </div>
+        <div class="form-inner">
+        <form action="https://serene-hamlet-94464.herokuapp.com/auth" method="GET" class="Login" id="user-form">
+        <div class="field">
+            <input type="text" id="username" name="username" placeholder="username" required>
+        </div>
+        <div class="field">
+            <input type="text" id="password" name="password" placeholder="password" required> 
+        </div>
+        <div class="field btn">
+            <div class="btn-layer"></div>
+            <button type="submit" onclick="event.preventDefault(), login()" class="btn">User Login</button>
+        </div>
+        
+    </form>
+    <form action="https://serene-hamlet-94464.herokuapp.com/admin-login/" method="POST" class="admin" id="admin-form">
+        <div class="field">
+            <input type="text" id="ausername" name="admin_username" placeholder="username" required>
+        </div>
+        <div class="field">
+            <input type="text" id="apassword" name="admin_password" placeholder="password" required> 
+        </div>
+        <div class="field btn">
+            <div class="btn-layer"></div>
+            <button type="submit" onclick="event.preventDefault(), admin()" class="btn">Admin user</button>
+        </div>
+    </form>
+    <div class="signup-link">
+        Don't have an account? <a href="./signup.html">Sign up here</a></p>
+        </div>
+        <div class="signup-link">
+            Don't have an  admin account? <a href="./admin_signup.html">Sign up here</a></p>
+            </div>
+    </div>
+       
+    
+    </div>
+
+<script src="./scripts/script.js"></script>
+</body>
+</html>

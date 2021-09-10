@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign UP</title>
+    <!-- BOOTSTRAP -->
+    <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous"> -->
+
+    <!-- GOOGLEAPI -->
+    <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet' type='text/css'>
+    
+    <!-- FONT AWESOME -->
+    <script src="https://kit.fontawesome.com/07c41cdf40.js" crossorigin="anonymous"></script>
+
+    <!-- CSS LINKS -->
+    <link rel="stylesheet" href="./templates/signup.css">
+</head>
+<body>
+            <div class="register">
+                <h2 class="active"> Register </h2>
+        
+                
+                <form onsubmit="event.preventDefault(); user()">
+                    <h3>Register</h3>
+                    <input class="text" type="text" id='first_name' placeholder="First Name" required>
+                <input class="text" type="text" id="last_name" placeholder="surname" required>
+                <input class="text" type="text" id="address" placeholder="Address" required>
+                <input class="text" type="text" id="email" placeholder="email@gmail.com" required>
+                <input class="text" type="text" id="username" placeholder="Username" required>
+                <input class="text" type="password" id="password" placeholder="password" required>
+                <div class="showpass">
+                    <input type="checkbox" id="checkbox-1-1" class="custom-checkbox" type="checkbox" onclick="show_password()"/>
+                    <label for="checkbox-1-1">Show Password</label>
+                </div>
+                    <button type="submit" class="signin">Submit</button>
+                    <span id="error"></span>
+                    <p>Already Registered? Go to <button type="button" class="signin" onclick="window.location.href='./login.html'">Login</button></p>
+                </form>
+            </div>  
+ 
+    <script src="./scripts/admin_signup.js"></script>
+</body>
+</html>
