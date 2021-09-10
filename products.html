@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Products</title>
+    <!-- BOOTSTRAP -->
+    <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous"> -->
+    
+    <!-- GOOGLEAPI -->
+    <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet' type='text/css'>
+    
+    <!-- FONT AWESOME -->
+    <script src="https://kit.fontawesome.com/07c41cdf40.js" crossorigin="anonymous"></script>
+    
+    <!-- CSS LINKS -->
+    <link rel="stylesheet" href="../templates/products.css">
+</head>
+<body>
+        <nav class="navbar">
+            <ul class="nav-links">
+            <div class="profile">
+              <li class="nav-link">
+                <a href="./index.html">Logout</a>
+              </li>
+            </div>
+            <div class="search-bar">
+              <form onsubmit="event.preventDefault(), searchItem()">
+                <input type="text" id="search-bar" required>
+                <button type="submit">Search</button>
+              </form>
+            </div>
+
+          </ul>
+              
+    </nav> 
+    <div id="product-container"></div>
+    <!-- <img src="" alt="" id="product_image"> -->
+
+    <script src="./scripts/product.js"></script>
+</body>
+</html>
