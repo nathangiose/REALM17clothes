@@ -34,4 +34,18 @@ function addToCart(id){
 
 }
 
+function searchForProducts() {
+    let searchTerm = document.querySelector("#search-bar").value;
+    console.log(searchTerm);
+
+    let searchedProducts = products.filter(product => product.product_name.toLowerCase().includes(searchTerm.toLowerCase()));
+    console.log(searchedProducts);
+
+    if(searchedProducts.length == 0) {
+        document.querySelector("#product-container").innerHTML =
+        "<h2>Sorry, we do not have the item you are looking for.</h2>";
+    } else
+    renderProducts(searchedProducts)
+}
+
 
